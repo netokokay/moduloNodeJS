@@ -1,0 +1,8 @@
+Explique como a web funciona a partir do ponto de vista do protocolo cliente servidor:
+
+O cliente ao tentar acessar um site, ele manda uma requisição em HTTP ao servidor, que dando tudo certo, o servidor retorna a requisição também em HTTP com os dados
+necessários para formar a página web que o cliente esta tentando acessar!
+
+Para criar um projeto em node.JS, usei os comandos 'npm init' seguido do 'npm install'. Após esses dois comandos, só precisei instalar as bibliotecas como por exemplo
+o express, usando o comando 'npm install express', para a Lib ORM usei o comando 'npm install typeorm --save' para importar a biblioteca do TypeORM e usei também o 
+comando 'npm install -g typescript' para instalar o typescript!
