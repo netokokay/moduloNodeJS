@@ -1,0 +1,26 @@
+const express = require('express');
+const app = express();
+const port = 8080
+
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
+
+app.get('/404', (req, res) => {
+    res.status(404).send('Not Found');
+})
+
+app.get('/redirect', (req, res) => {
+    res.redirect('/404')
+})
+
+app.get('/sendStatus', (req, res) => {
+    res.sendStatus(200)
+})
+
+
+
+
+app.listen(port, () => {
+    console.log(`APP escutando na porta ${port}`)
+})
