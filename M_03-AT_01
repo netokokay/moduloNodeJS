@@ -1,0 +1,41 @@
+/*
+   ____   ___    ________    ___           ___           ____________
+..|   |  |  |...|   ____|...|  |..........|  |..........|           | 
+..|   |  |  |...|  |........|  |..........|  |..........|    ____   |
+..|   |__|  |...|  |____ ...|  |..........|  |..........|   |   |   |
+..|    __   |...|   ___| ...|  |..........|  |..........|   |   |   |
+..|   | |   |...|  |........|  |..........|  |..........|   |___|   |
+..|   | |   |...|  |_____...|  |______....|  |______....|           | 
+..|___| |___|...|_______|...|________|....|________|....|___________|
+
+1. Para rodar, digite em seu console dentro do projeto o comando "node" + o nome do arquivo em JS
+2. Para testar se sua aplicação esta funcionando, use o INSOMNIA para acessar a seguinte requisição "http://localhost:3000", se tudo der certo, você verá na tela o 
+nome "HTTP" seguido do método que você escolheu, sendo eles: GET, POST, PUT ou DELETE
+*/
+
+const express = require('express');
+const app = express();
+const port = 8080
+
+app.get('/', (req, res) => {
+    return res.send('HTTP GET')
+})
+
+app.post('/', (req, res) => {
+    return res.send('HTTP POST')
+})
+
+app.put('/', (req, res) => {
+    return res.send('HTTP PUT')
+})
+
+app.delete('/', (req, res) => {
+    return res.send('HTTP DELETE')
+})
+
+
+
+
+app.listen(port, () => {
+    console.log(`APP escutando na porta ${port}`)
+})
