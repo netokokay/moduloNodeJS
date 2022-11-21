@@ -9,7 +9,7 @@
 ..|   | |   |...|  |_____...|  |______....|  |______....|           | 
 ..|___| |___|...|_______|...|________|....|________|....|___________|
 
-1. Para rodar, digite em seu console dentro do projeto o comando "node servidor.js"
+1. Para rodar, digite em seu console dentro do projeto o comando "node" + o nome do arquivo em JS
 2. Para testar se sua aplicação esta funcionando, use seu navegador para acessar o seguinte URL "http://localhost:3000", se tudo der certo, você verá a seguinte mensagem
 "OLA MUNDO"
 */
