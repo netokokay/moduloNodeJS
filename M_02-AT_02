@@ -1,0 +1,17 @@
+const express = require('express');
+const app = express();
+const port = 8080
+
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
+
+app.post('/post', (req, res) => {
+    
+
+    //Exemplo de rota do tipo POST
+})
+
+app.listen(port, () => {
+    console.log(`APP escutando na porta ${port}`)
+})
